@@ -1,0 +1,8 @@
+zookeeper-server-start.bat E:\kafka_2.12-2.3.1\config\zookeeper.properties
+
+cd E:\kafka_2.12-2.3.1\bin\windows
+
+kafka-server-start.bat E:\kafka_2.12-2.3.1\config\server.properties
+
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
